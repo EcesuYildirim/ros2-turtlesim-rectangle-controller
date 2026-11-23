@@ -50,7 +50,16 @@ Robotun simülasyonunu çalıştıran düğümdür. Hız komutlarını alır ve 
 
 Haberleşme yapısı:
 
-dhata > &d / |0hatal > ¿o / V = V, W = 0 v= 0, @ = Wr Pose alındı / dhata ≤ &d / i= 0, d = 3 |0natal ≤ 20i= 3/ v= 0, @ = 0 v= 0, @ = 0 INIT MOVE_FORWARD ROTATE DONE |0hatal ≤ &o Ai < 3 / i-i+1, d = (i % 2 == 0) ? 3 : 2 
+```text
+       /turtlesim
+           |
+           | /turtle1/pose
+           v
+    /rectangle_turtle
+           |
+           | /turtle1/cmd_vel
+           v
+       /turtlesim
 ```
 
 Bu yapı sayesinde robotun hareketleri konum geri beslemesi kullanılarak kontrol edilmektedir.
@@ -66,11 +75,17 @@ Robotun hareket kontrolü dört durumdan oluşan bir FSM ile gerçekleştirilmi�
 | ROTATE | Robot hedef yönelime ulaşmak için 90° döner. |
 | DONE | Dikdörtgen tamamlandığında robot durdurulur. |
 
-Durum geçişleri:
+### FSM Durum Geçiş Diyagramı
 
-<img width="812" height="279" alt="image" src="https://github.com/user-attachments/assets/dbd2d529-440d-448f-a44b-4c4d4897f077" />
+![ROS 2 Turtlesim FSM Durum Geçiş Diyagramı](docs/fsm_diagram.png)
 
-```
+FSM, robotun anlık konum ve yönelim bilgilerine bağlı olarak durumlar arasında geçiş yapmasını sağlar.
+
+`MOVE_FORWARD` durumunda robotun ilerlediği mesafe, `ROTATE` durumunda ise hedef yönelim ile mevcut yönelim arasındaki açı hatası kontrol edilir.
+
+Her iki durumda da hedefe ulaşılıp ulaşılmadığı tolerans değerleri üzerinden değerlendirilir.
+
+Dört kenarın ve son dönüşün tamamlanmasının ardından sistem `DONE` durumuna geçer.
 
 Kontrol işlemleri ROS 2 Timer mekanizmasıyla yaklaşık 20 Hz frekansında gerçekleştirilmektedir.
 
@@ -139,10 +154,8 @@ cd ~/ros2_ws/src
 Proje GitHub üzerinden indirilir:
 
 ```bash
-git clone https://github.com/USERNAME/ros2-turtlesim-rectangle-controller.git
+git clone https://github.com/EcesuYildirim/ros2-turtlesim-rectangle-controller.git
 ```
-
-**Not:** `USERNAME` alanı GitHub kullanıcı adıyla değiştirilmelidir.
 
 ### Paketin Derlenmesi
 
