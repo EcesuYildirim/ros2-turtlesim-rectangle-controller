@@ -68,22 +68,8 @@ Robotun hareket kontrolü dört durumdan oluşan bir FSM ile gerçekleştirilmi�
 
 Durum geçişleri:
 
-```text
-          INIT
-            |
-            v
-      MOVE_FORWARD
-            |
-            | Hedef mesafeye ulaşıldı
-            v
-          ROTATE
-            |
-       +----+----+
-       |         |
-  Kenar var   Tamamlandı
-       |         |
-       v         v
- MOVE_FORWARD   DONE
+<img width="812" height="279" alt="image" src="https://github.com/user-attachments/assets/dbd2d529-440d-448f-a44b-4c4d4897f077" />
+
 ```
 
 Kontrol işlemleri ROS 2 Timer mekanizmasıyla yaklaşık 20 Hz frekansında gerçekleştirilmektedir.
