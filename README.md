@@ -50,16 +50,7 @@ Robotun simülasyonunu çalıştıran düğümdür. Hız komutlarını alır ve 
 
 Haberleşme yapısı:
 
-```text
-       /turtlesim
-           |
-           | /turtle1/pose
-           v
-    /rectangle_turtle
-           |
-           | /turtle1/cmd_vel
-           v
-       /turtlesim
+dhata > &d / |0hatal > ¿o / V = V, W = 0 v= 0, @ = Wr Pose alındı / dhata ≤ &d / i= 0, d = 3 |0natal ≤ 20i= 3/ v= 0, @ = 0 v= 0, @ = 0 INIT MOVE_FORWARD ROTATE DONE |0hatal ≤ &o Ai < 3 / i-i+1, d = (i % 2 == 0) ? 3 : 2 
 ```
 
 Bu yapı sayesinde robotun hareketleri konum geri beslemesi kullanılarak kontrol edilmektedir.
