@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating rectangle_controller.egg-info
+writing rectangle_controller.egg-info/PKG-INFO
+writing dependency_links to rectangle_controller.egg-info/dependency_links.txt
+writing entry points to rectangle_controller.egg-info/entry_points.txt
+writing requirements to rectangle_controller.egg-info/requires.txt
+writing top-level names to rectangle_controller.egg-info/top_level.txt
+writing manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+reading manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+writing manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ecesu/ros2_ws/install/rectangle_controller/lib/python3.12/site-packages/rectangle-controller.egg-link (link to .)
+Installing rectangle_turtle script to /home/ecesu/ros2_ws/install/rectangle_controller/lib/rectangle_controller
+
+Installed /home/ecesu/ros2_ws/build/rectangle_controller
+running symlink_data
+creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index
+creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index
+creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index/packages
+symbolically linking /home/ecesu/ros2_ws/build/rectangle_controller/resource/rectangle_controller -> /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index/packages
+symbolically linking /home/ecesu/ros2_ws/build/rectangle_controller/package.xml -> /home/ecesu/ros2_ws/install/rectangle_controller/share/rectangle_controller

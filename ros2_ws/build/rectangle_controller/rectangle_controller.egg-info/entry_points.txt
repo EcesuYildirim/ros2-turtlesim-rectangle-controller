@@ -1,0 +1,2 @@
+[console_scripts]
+rectangle_turtle = rectangle_controller.rectangle_turtle:main

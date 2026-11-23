@@ -1,0 +1,24 @@
+[1.720s] Invoking command in '/home/ecesu/ros2_ws/build/rectangle_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ecesu/ros2_ws/build/rectangle_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ecesu/ros2_ws/install/rectangle_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ecesu/ros2_ws/build/rectangle_controller/build --no-deps symlink_data
+[2.188s] running develop
+[2.485s] running egg_info
+[2.486s] creating rectangle_controller.egg-info
+[2.506s] writing rectangle_controller.egg-info/PKG-INFO
+[2.506s] writing dependency_links to rectangle_controller.egg-info/dependency_links.txt
+[2.506s] writing entry points to rectangle_controller.egg-info/entry_points.txt
+[2.506s] writing requirements to rectangle_controller.egg-info/requires.txt
+[2.506s] writing top-level names to rectangle_controller.egg-info/top_level.txt
+[2.507s] writing manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+[2.550s] reading manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+[2.550s] writing manifest file 'rectangle_controller.egg-info/SOURCES.txt'
+[2.570s] running build_ext
+[2.571s] Creating /home/ecesu/ros2_ws/install/rectangle_controller/lib/python3.12/site-packages/rectangle-controller.egg-link (link to .)
+[2.571s] Installing rectangle_turtle script to /home/ecesu/ros2_ws/install/rectangle_controller/lib/rectangle_controller
+[2.572s] 
+[2.572s] Installed /home/ecesu/ros2_ws/build/rectangle_controller
+[2.572s] running symlink_data
+[2.572s] creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index
+[2.572s] creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index
+[2.572s] creating /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index/packages
+[2.573s] symbolically linking /home/ecesu/ros2_ws/build/rectangle_controller/resource/rectangle_controller -> /home/ecesu/ros2_ws/install/rectangle_controller/share/ament_index/resource_index/packages
+[2.573s] symbolically linking /home/ecesu/ros2_ws/build/rectangle_controller/package.xml -> /home/ecesu/ros2_ws/install/rectangle_controller/share/rectangle_controller
+[2.622s] Invoked command in '/home/ecesu/ros2_ws/build/rectangle_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ecesu/ros2_ws/build/rectangle_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ecesu/ros2_ws/install/rectangle_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ecesu/ros2_ws/build/rectangle_controller/build --no-deps symlink_data
